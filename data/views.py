@@ -5,8 +5,8 @@ from django.conf import settings
 
 s3 = boto3.client('s3')
 
-BUCKET1 = "your-bucket1-name"
-PREFIX = "test-data/"
+BUCKET1 = "viaq-data"
+PREFIX = "device_data/"
 
 class ListFilesView(APIView):
     def get(self, request):
