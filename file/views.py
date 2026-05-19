@@ -5,7 +5,7 @@ from rest_framework.parsers import MultiPartParser
 from django.conf import settings
 
 s3 = boto3.client('s3')
-BUCKET2 = "your-bucket2-name"
+BUCKET2 = "viaq-firmware"
 
 class UploadFileView(APIView):
     parser_classes = [MultiPartParser]
